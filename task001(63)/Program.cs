@@ -11,11 +11,11 @@ void Main()
     Console.WriteLine("Return number: ");
     int number = int.Parse(Console.ReadLine()!);
     WriteNumber(number, newNumber);
-
+}
     void WriteNumber(int number, int newNumber)
     {
         Console.Write(" " + newNumber);
         if (newNumber < number) WriteNumber(number, newNumber + 1);
     }
-}
+
 Main();
