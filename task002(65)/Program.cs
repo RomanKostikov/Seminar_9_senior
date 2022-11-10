@@ -12,7 +12,7 @@ void Main()
     Console.WriteLine("Return number 2: ");
     int number2 = UserInput();
     WriteNumber(number1, number2);
-
+}
     int UserInput()
     {
         int number = int.Parse(Console.ReadLine()!);
@@ -24,5 +24,5 @@ void Main()
         Console.Write(" " + number1);
         if (number1 < number2) WriteNumber(number1 + 1, number2);
     }
-}
+
 Main();
