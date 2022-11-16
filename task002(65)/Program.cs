@@ -13,16 +13,16 @@ void Main()
     int number2 = UserInput();
     WriteNumber(number1, number2);
 }
-    int UserInput()
-    {
-        int number = int.Parse(Console.ReadLine()!);
-        return number;
-    }
+int UserInput()
+{
+    int number = int.Parse(Console.ReadLine()!);
+    return number;
+}
 
-    void WriteNumber(int number1, int number2)
-    {
-        Console.Write(" " + number1);
-        if (number1 < number2) WriteNumber(number1 + 1, number2);
-    }
+void WriteNumber(int number1, int number2)
+{
+    Console.Write(" " + number1);
+    if (number1 < number2) WriteNumber(number1 + 1, number2);
+}
 
 Main();
